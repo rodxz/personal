@@ -140,40 +140,6 @@ h3 {
     font-weight: bold
 }
 
-/* ===== Responsividade ===== */
-
-.sobre-personal{
-  background-color: ghostwhite;
-  padding: 40px;
-}
-.sobre-personal .conteudo{
-  display: flex;
-  align-items: left;
-  justify-content: center;
-  gap: 20px;
-}
-.foto-personal{
-  width: 370px;
-  height: 516px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-.texto-personal{
-  max-width: 500px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 40px;
-}
-
-.sobre-personal {
-  background-color: ghostwhite;
-  padding: 0px;
-  min-height: 500px; /* garante que a seção tenha altura fixa */
-}
-
 .sobre-personal .conteudo {
   display: flex;
   align-items: center;       /* centraliza o texto na vertical */
@@ -338,27 +304,66 @@ h3 {
     margin-bottom: 20px;
     padding: 18px 10px;
   }
-  /* Ajuste seção sobre mim */
+}
+.sobre-personal {
+  background-color: ghostwhite;
+  padding: 40px;
+  min-height: 500px; /* garante altura mínima */
+}
+
+.sobre-personal .conteudo {
+  display: flex;
+  align-items: center;       /* centraliza verticalmente */
+  justify-content: flex-start; /* imagem à esquerda */
+  gap: 40px;                 /* espaço entre imagem e texto */
+  flex-wrap: wrap;           /* garante responsividade */
+}
+
+.foto-personal {
+  width: 370px;   /* largura fixa */
+  height: auto;   /* altura proporcional */
+  object-fit: cover;
+  flex-shrink: 0; /* não deixa a imagem encolher */
+  border-radius: 10px; /* opcional, deixa a imagem arredondada */
+}
+
+.texto-personal {
+  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#sobre-mim {
+  font-size: 70px;
+  color: #317873;
+}
+
+#sobre-mim-texto {
+  font-family: roboto;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
   .sobre-personal .conteudo {
     flex-direction: column;
     text-align: center;
     gap: 20px;
   }
+
   .foto-personal {
-    margin-bottom: 20px;
-    max-height: 250px;
     width: 100%;
+    max-width: 300px;
     height: auto;
   }
+
   .texto-personal {
-    padding-left: 0;
-    font-size: 1rem;
     max-width: 95%;
-    margin: 0 auto 20px auto;
-    line-height: 1.6;
+    padding-left: 0;
+    margin: 0 auto;
+    font-size: 1rem;
   }
+
   #sobre-mim {
     font-size: 28px;
-    margin-bottom: 15px;
   }
 }
