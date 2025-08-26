@@ -305,30 +305,36 @@ h3 {
     padding: 18px 10px;
   }
 }
+/* === Seção Sobre o Personal (limpa e centralizada) === */
 .sobre-personal {
   background-color: ghostwhite;
-  padding: 40px;
-  min-height: 500px; /* garante altura mínima */
+  min-height: 500px;           /* altura mínima do container */
+  padding: 0 40px;             /* só laterais, ajuda a centralizar visualmente */
+  display: flex;               /* TRUQUE: o container vira um flex */
+  align-items: center;         /* centra VERTICALMENTE o conteúdo no meio do container */
 }
 
 .sobre-personal .conteudo {
+  width: min(1100px, 95vw);    /* largura máxima + responsivo */
+  margin: 0 auto;              /* centra HORIZONTALMENTE */
   display: flex;
-  align-items: center;       /* centraliza verticalmente */
-  justify-content: flex-start; /* imagem à esquerda */
-  gap: 40px;                 /* espaço entre imagem e texto */
-  flex-wrap: wrap;           /* garante responsividade */
+  align-items: center;         /* alinha imagem e texto pelo centro vertical */
+  justify-content: center;     /* mantém tudo “no meio” */
+  gap: 40px;
+  flex-wrap: wrap;             /* garante quebra saudável em telas menores */
 }
 
 .foto-personal {
-  width: 370px;   /* largura fixa */
-  height: auto;   /* altura proporcional */
+  width: 370px;                /* largura desejada */
+  height: auto;                /* mantém proporção */
+  max-height: 500px;
   object-fit: cover;
-  flex-shrink: 0; /* não deixa a imagem encolher */
-  border-radius: 10px; /* opcional, deixa a imagem arredondada */
+  flex-shrink: 0;
+  display: block;              /* evita “inline-gap” e garante box da imagem */
 }
 
 .texto-personal {
-  max-width: 500px;
+  max-width: 520px;
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -342,8 +348,13 @@ h3 {
   font-family: roboto;
 }
 
-/* ===== Responsividade ===== */
+/* ===== Responsivo ===== */
 @media (max-width: 768px) {
+  .sobre-personal {
+    padding: 20px;
+    min-height: 0;             /* deixa a altura fluir no mobile */
+  }
+
   .sobre-personal .conteudo {
     flex-direction: column;
     text-align: center;
@@ -352,18 +363,17 @@ h3 {
 
   .foto-personal {
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
     height: auto;
   }
 
   .texto-personal {
     max-width: 95%;
-    padding-left: 0;
     margin: 0 auto;
     font-size: 1rem;
   }
 
   #sobre-mim {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
