@@ -144,6 +144,20 @@ h3 {
   flex-direction: column;
   text-align: center;
   }
+  
+  #titulo{
+    font-size: 180%;
+    padding: 20px 10px;
+    height: auto;
+    margin-bottom: 20PX;
+  }
+
+  #serviço{
+    font-size: 180%;
+    padding: 20px 10px;
+    height: auto;
+    margin-bottom: 20PX;
+  }
 
   .foto-personal {
   margin-bottom: 20px;
