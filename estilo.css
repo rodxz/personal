@@ -428,3 +428,28 @@ h3 {
   justify-content: space-between;
   height: 100%;
 }
+/* Adicione isso ao seu estilo para garantir altura igual dos cards */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; /* Isso já está no seu CSS, está correto */
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-card {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
