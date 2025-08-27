@@ -181,7 +181,7 @@ h3 {
 .btn-acao{
   background-color: #007fff;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 170%;
+  font-size: 165%;
   border-radius: 6%;
   color: ghostwhite;
   border: none;
@@ -402,7 +402,7 @@ h3 {
 }
 
 .card h4 {
-  text-align: right;
+  text-align: center;
   margin: 0;
   color: #333;
 }
@@ -414,4 +414,8 @@ h3 {
   }
   p{
     font-family: Arial, Helvetica, sans-serif;
+  }
+  #treino{
+    font-family: arial;
+    font-style: normal;
   }
