@@ -5,11 +5,11 @@
 body {
   background-color: #317873;
 }
-h1, h2, h3, h4, #depoimento {
+h1, h2, h3, h4{
   font-family: monntserrat;
 }
 
-h1, h2, #frase-do-titulo, .beneficios h2, .beneficios .subtitulo #depoimento{
+h1, h2, #frase-do-titulo, .beneficios h2, .beneficios{
   color: ghostwhite;
 }
 
@@ -402,7 +402,11 @@ h3 {
     font-style: normal;
     top: 100%;
   }
-  .subtitulo, #depoimento{
+  .subtitulo{
+    text-align: center;
+    color: ghostwhite;
+  }
+  #depoimento{
     text-align: center;
     color: ghostwhite;
   }
