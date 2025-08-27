@@ -1,17 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    background-color: #317873;
+  background-color: #317873;
 }
 
 #serviço {
-    text-align: center;
-    padding: 55px;
-    height: 160px;
-    font-family: moontserrat;
-    font-size: 500%;
+  text-align: center;
+  padding: 55px;
+  height: 160px;
+  font-family: moontserrat;
+  font-size: 500%;
 }
 
 /* Estilo da seção de benefícios */
@@ -31,7 +31,6 @@ body {
   font-size: 25px;
   margin-bottom: 40px;
   color: ghostwhite;
-  font-family: roboto;
 }
 
 .beneficios-container {
@@ -52,8 +51,8 @@ body {
 }
 
 .beneficio-card:hover {
-    transform: translateY(-10px) scale(1.03); /* sobe e aumenta um pouco */
-    box-shadow: 0 12px 20px rgba(0,0,0,0.2); /* sombra mais intensa */
+  transform: translateY(-10px) scale(1.03); 
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2); 
 }
 
 .beneficio-card img {
@@ -68,7 +67,6 @@ body {
 }
 
 .beneficio-card p {
-  font-family: roboto;
   font-size: 20px;
   color: #666;
   line-height: 1.4;
@@ -76,21 +74,20 @@ body {
 
 /* Título */
 h1 {
-    text-align: center;
-    font-size: 450%;
-    font-family: monntserrat;
-    color: ghostwhite;
+  text-align: center;
+  font-size: 450%;
+  font-family: monntserrat;
+  color: ghostwhite;
 }
 
 #frase-do-titulo {
-    text-align: center;
-    font-size: 120%;
-    font-family: roboto;
-    color: ghostwhite;
+  text-align: center;
+  font-size: 120%;
+  color: ghostwhite;
 }
 
 .container-botao {
-    text-align: center;
+  text-align: center;
 }
 
 /* Cards */
@@ -117,63 +114,57 @@ h1 {
   box-shadow: 0 12px 20px rgba(0,0,0,0.2);
 }
 
-/* Textos */
-#treino, #treino2 {
-    font-family: roboto;
-}
 
 h4 {
-    font-family: monntserrat;
+  font-family: monntserrat;
 }
 h2 {
-    font-family: monntserrat;
-    color: ghostwhite;
+  font-family: monntserrat;
+  color: ghostwhite;
     
 }
 h3 {
-    font-family: monntserrat;
-    color: black;
-    font-weight: bold;
-    font-size: 10%;
+  font-family: monntserrat;
+  color: black;
+  font-weight: bold;
+  font-size: 10%;
 }
 #treinar-comigo {
-    font-weight: bold
+  font-weight: bold
 }
 
 .sobre-personal .conteudo {
   display: flex;
-  align-items: center;       /* centraliza o texto na vertical */
-  justify-content: flex-start; /* garante que a imagem fique colada à esquerda */
-  gap: 40px;                 /* espaço entre imagem e texto */
+  align-items: center;       
+  justify-content: flex-start; 
+  gap: 40px;                 
 }
 
 .foto-personal {
-  height: 100%;              /* ocupa a altura toda do container */
-  max-height: 500px;         /* controla o limite da altura */
-  width: auto;               /* largura se ajusta proporcionalmente */
-  object-fit: contain;       /* mantém proporção da imagem */
-  flex-shrink: 0;            /* não deixa a imagem "apertar" */
+  height: 100%;              
+  max-height: 500px;         
+  width: auto;               
+  object-fit: contain;       
+  flex-shrink: 0;            
 }
 
 @media (max-width: 768px) {
   .sobre-personal .conteudo {
-    flex-direction: column;
-    text-align: center;
+  flex-direction: column;
+  text-align: center;
   }
 
   .foto-personal {
-    margin-bottom: 20px;
-    max-height: 400px;
-    width: 100%;   /* no mobile ocupa a largura da tela */
-    height: auto;
+  margin-bottom: 20px;
+  max-height: 400px;
+  width: 100%;
+  height: auto;
   }
 }
 #sobre-mim{
   color: #317873;
 }
-#sobre-mim-texto{
-  font-family:  roboto;
-}
+
 .beneficios #treinar-comigo{
   font-size: 500%;
 }
@@ -190,7 +181,7 @@ h3 {
 }
 .btn-acao{
   background-color: #007fff;
-  font-family: roboto;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 170%;
   border-radius: 6%;
   color: ghostwhite;
@@ -198,14 +189,14 @@ h3 {
 }
 
 #cadastro-concluido{
- position: absolute;
- top: 40%;
- left: 50%;
- transform: translate(-50%, -50%);
- width: 80%;
- text-align: center;
- white-space: normal;
- font-size: 500%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  white-space: normal;
+  font-size: 500%;
  font-weight: bold;
 }
 #cadastro{
@@ -232,7 +223,7 @@ h3 {
  color: ghostwhite;
  font-size: 150%;
 }
-/* ===== Responsividade Tablets ===== */
+
 @media (max-width: 1024px) {
   h1 {
     font-size: 320%;
@@ -259,7 +250,7 @@ h3 {
     max-width: 300px;
   }
 }
-/* ===== Responsividade Celulares ===== */
+
 @media (max-width: 768px) {
   h1 {
     font-size: 180%;
@@ -305,32 +296,32 @@ h3 {
     padding: 18px 10px;
   }
 }
-/* === Seção Sobre o Personal (limpa e centralizada) === */
+
 .sobre-personal {
   background-color: ghostwhite;
-  min-height: 500px;           /* altura mínima do container */
-  padding: 0 40px;             /* só laterais, ajuda a centralizar visualmente */
-  display: flex;               /* TRUQUE: o container vira um flex */
-  align-items: center;         /* centra VERTICALMENTE o conteúdo no meio do container */
+  min-height: 500px;           
+  padding: 0 40px;             
+  display: flex;               
+  align-items: center;         
 }
 
 .sobre-personal .conteudo {
-  width: min(1100px, 95vw);    /* largura máxima + responsivo */
-  margin: 0 auto;              /* centra HORIZONTALMENTE */
+  width: min(1100px, 95vw);    
+  margin: 0 auto;              
   display: flex;
-  align-items: center;         /* alinha imagem e texto pelo centro vertical */
-  justify-content: center;     /* mantém tudo “no meio” */
+  align-items: center;         
+  justify-content: center;     
   gap: 40px;
-  flex-wrap: wrap;             /* garante quebra saudável em telas menores */
+  flex-wrap: wrap;             
 }
 
 .foto-personal {
-  width: 370px;                /* largura desejada */
-  height: auto;                /* mantém proporção */
+  width: 370px;                
+  height: auto;                
   max-height: 500px;
   object-fit: cover;
   flex-shrink: 0;
-  display: block;              /* evita “inline-gap” e garante box da imagem */
+  display: block;              
 }
 
 .texto-personal {
@@ -344,15 +335,12 @@ h3 {
   color: #317873;
 }
 
-#sobre-mim-texto {
-  font-family: roboto;
-}
 
-/* ===== Responsivo ===== */
+
 @media (max-width: 768px) {
   .sobre-personal {
     padding: 20px;
-    min-height: 0;             /* deixa a altura fluir no mobile */
+    min-height: 0;             
   }
 
   .sobre-personal .conteudo {
@@ -417,12 +405,14 @@ h3 {
 .card h4 {
   text-align: right;
   margin: 0;
-  color: #333;}
-  #comentario{
-    font-family: roboto;
-  }
+  color: #333;
+}
+  
   #depoimento{
     color: ghostwhite;
     font-family: monntserrat;
     font-size: 500%;
+  }
+  p{
+    font-family: Arial, Helvetica, sans-serif;
   }
