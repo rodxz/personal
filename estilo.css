@@ -137,6 +137,28 @@ h3 {
   flex-shrink: 0;            
 }
 
+#sobre-mim{
+  color: #317873;
+  font-size: 70px;
+}
+
+ #depoimento{
+    font-size: 500%;
+    font-weight: bold;
+    line-height: 50px;
+    height: auto;
+    padding: 60px 20px;
+    display: flex;
+    color: ghostwhite;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .beneficios #treinar-comigo{
+  font-size: 500%;
+  }
+
 @media (max-width: 768px) {
   .sobre-personal .conteudo {
   flex-direction: column;
@@ -228,16 +250,6 @@ h3 {
 }
 
 
-
-#sobre-mim{
-  color: #317873;
-  font-size: 70px;
-}
-
-
-.beneficios #treinar-comigo{
-  font-size: 500%;
-}
 
 #titulo{
   font-weight: bold;
@@ -391,18 +403,7 @@ h3 {
   color: #333;
 }
   
-  #depoimento{
-    font-size: 500%;
-    font-weight: bold;
-    line-height: 50px;
-    height: auto;
-    padding: 60px 20px;
-    display: flex;
-    color: ghostwhite;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
+ 
   p{
     font-family: Arial, Helvetica, sans-serif;
   }
