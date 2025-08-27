@@ -393,6 +393,8 @@ h3 {
     height: auto;
     padding: 60px 20px;
     display: flex;
+    color: ghostwhite;
+    text-align: center;
   }
   p{
     font-family: Arial, Helvetica, sans-serif;
@@ -403,10 +405,6 @@ h3 {
     top: 100%;
   }
   .subtitulo{
-    text-align: center;
-    color: ghostwhite;
-  }
-  #depoimento{
     text-align: center;
     color: ghostwhite;
   }
