@@ -143,6 +143,17 @@ h3 {
   text-align: center;
   }
   
+#depoimento{
+    font-size: 250%;
+    padding: 20px 10px;
+    height: auto;
+    margin-bottom: 20PX;
+  }
+
+  #treinar-comigo{
+    font-size: 250%
+  }
+
   #titulo{
     font-size: 250%;
     padding: 20px 10px;
@@ -231,7 +242,7 @@ h3 {
   }
 
   #sobre-mim {
-    font-size: 32px;
+    font-size: 250%;
   }
 }
 #sobre-mim{
