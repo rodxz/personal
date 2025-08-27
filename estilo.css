@@ -21,8 +21,6 @@ h1, h2, #frase-do-titulo, .beneficios h2, .beneficios{
 
 #serviço {
   text-align: center;
-  padding: 55px;
-  height: 160px;
   font-family: moontserrat;
   font-size: 500%;
 }
@@ -247,8 +245,6 @@ h3 {
 }
 
 #titulo{
-  height: 100px;
-  padding: 150px;
   font-weight: bold;
 }
 #frase-do-titulo{
