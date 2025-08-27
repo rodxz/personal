@@ -143,26 +143,28 @@ h3 {
   text-align: center;
   }
   
+  #depoimento, #sobre-mim, #treinar-comigo, #titulo, #serviço {
+    font-size: 200%;
+    padding: 20px 10px;
+    height: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+
 #depoimento{
-    font-size: 250%;
     padding: 20px 10px;
     height: auto;
     margin-bottom: 20PX;
   }
 
-  #treinar-comigo{
-    font-size: 250%
-  }
-
   #titulo{
-    font-size: 250%;
     padding: 20px 10px;
     height: auto;
     margin-bottom: 20PX;
   }
 
   #serviço{
-    font-size: 250%;
     padding: 20px 10px;
     height: auto;
     margin-bottom: 20PX;
@@ -240,11 +242,10 @@ h3 {
     margin: 0 auto;
     font-size: 1rem;
   }
-
-  #sobre-mim {
-    font-size: 250%;
-  }
 }
+
+
+
 #sobre-mim{
   color: #317873;
   font-size: 70px;
