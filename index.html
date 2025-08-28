@@ -11,6 +11,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        
+        <header class="navbar-site">
+            <nav class="navbar-container">
+                <a href="#titulo" class="navbar-logo">Personal Trainer</a>
+            <ul class="navbar-links">
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#serviço">Serviços</a></li>
+                <li><a href="#treinar-comigo">Benefícios</a></li>
+                <li><a href="#depoimento">Avaliações</a></li>
+                <li><a href="#contato-footer">Contato</a></li>
+            </ul>
+                <button class="navbar-toggle" aria-label="Abrir menu">&#9776;</button>
+            </nav>
+        </header>
+        
         <h1 id="titulo">Mais Energia, Mais Saúde, Mais Você.</h1>
         <p id="frase-do-titulo">Seu bem-estar é nossa prioridade. Criamos treinos personalizados e estratégias eficazes para ajudá-lo a conquistar seus objetivos de forma saudável, segura e sustentável, transformando seu corpo e sua vida.</p>
         <a href="Agendamento.html"><div class="container-botao"><button class="btn-acao">Agende sua avaliação</button></div></a>
@@ -126,7 +141,7 @@
             </div>
         </section>
 
-        <footer class="footer-site">
+        <footer class="footer-site" id="contato-footer">
             <div class="footer-container">
             <div class="footer-info">
                 <h3>Contato</h3>
@@ -145,6 +160,17 @@
             </div>
         </footer>
 
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.querySelector('.navbar-toggle');
+            const links = document.querySelector('.navbar-links');
+            if (toggle && links) {
+            toggle.addEventListener('click', function() {
+            links.classList.toggle('active');
+                    });
+                }
+            });
+        </script>
 
     </body>
 </html>
