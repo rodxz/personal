@@ -253,6 +253,7 @@ h3 {
 
 #titulo{
   font-weight: bold;
+  text-align: center;
 }
 #frase-do-titulo{
   padding: 70px;
