@@ -5,6 +5,20 @@
 body {
   background-color: #317873;
 }
+
+.banner{
+  background-image: url(banner.png);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ghostwhite;
+  font-size: 2em;
+  text-align: center;
+}
+
 h1, h2, h3, h4{
   font-family: monntserrat;
 }
