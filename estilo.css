@@ -23,10 +23,11 @@ h1, h2, #frase-do-titulo, .beneficios h2, .beneficios{
   text-align: center;
   font-family: moontserrat;
   font-size: 500%;
+  margin-top: 60px;
 }
 
 .beneficios {
-  padding: 60px 20px;
+  padding: 60px 20px 20px 20px;
   background-color: #317873;
   text-align: center;
 }
@@ -147,12 +148,14 @@ h3 {
     font-weight: bold;
     line-height: 50px;
     height: auto;
-    padding: 60px 20px;
+    padding: 20px 20px;
     display: flex;
     color: ghostwhite;
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   .beneficios #treinar-comigo{
@@ -266,6 +269,7 @@ h3 {
   border-radius: 6%;
   color: ghostwhite;
   border: none;
+  padding: 18px 40px;
 }
 
 #cadastro-concluido{
