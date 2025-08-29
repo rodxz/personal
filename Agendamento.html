@@ -4,109 +4,101 @@
         <meta charset="utf-8">
         <title>Treine Melhor, Alcance Seus Objetivos – Personal Trainer - Cadastro</title>
         <style>
-  * {
-    box-sizing: border-box;
+            .agendamento {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.agendamento h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #317873;
+}
+
+.form-agendamento {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.card-opcao {
+  flex: 1 1 30%;
+  min-width: 140px;
+  background: #fff;
+  border: 2px solid #317873;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card-opcao:hover {
+  background: #317873;
+  color: #fff;
+}
+
+.card-opcao input {
+  display: none;
+}
+
+.card-opcao input:checked + span {
+  font-weight: bold;
+  color: #317873;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: #317873;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #007fff;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .card-opcao {
+    flex: 1 1 100%;
   }
+}
 
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 20px;
-  }
-
-  .container {
-    max-width: 500px;
-    margin: auto;
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #333;
-  }
-
-  label {
-    display: block;
-    margin-top: 15px;
-    font-weight: 600;
-    color: #444;
-  }
-
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 6px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-  }
-
-  .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 10px;
-  }
-
-  .card {
-    background-color: #f0f0f0;
-    padding: 10px 12px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.95rem;
-  }
-
-  .card input[type="checkbox"] {
-    transform: scale(1.2);
-  }
-
-  textarea {
-    resize: vertical;
-  }
-
-  button {
-    margin-top: 20px;
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #0056b3;
-  }
-
-  @media (max-width: 600px) {
-    .container {
-      padding: 20px;
-    }
-
-    .card {
-      font-size: 0.9rem;
-      padding: 8px 10px;
-    }
-
-    button {
-      font-size: 0.95rem;
-    }
-  }
-</style>
+        </style>
             <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -115,41 +107,47 @@
     <link href="estilo.css" rel="stylesheet">
     </head>
     <body id="cadastro">
-
-        <div class="container">
-    <h2>Agendamento com Personal Trainer</h2>
-    <form>
-      <label for="nome">Nome completo:</label>
-      <input type="text" id="nome" name="nome" required>
-
-      <label for="whatsapp">Número do WhatsApp:</label>
-      <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
-
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label>Escolha os serviços:</label>
-      <div class="cards">
-        <div class="card">
-          <span>Treino funcional</span>
-          <input type="checkbox" name="servico" value="funcional">
-        </div>
-        <div class="card">
-          <span>Musculação personalizada</span>
-          <input type="checkbox" name="servico" value="musculacao">
-        </div>
-        <div class="card">
-          <span>Consultoria nutricional</span>
-          <input type="checkbox" name="servico" value="nutricional">
-        </div>
-      </div>
-
-            <label for="observacao">Observações:</label>
-            <textarea id="observacao" name="observacao" rows="4" placeholder="Escreva aqui qualquer detalhe adicional..."></textarea>
-
-        <button type="submit">Enviar Agendamento</button>
-        </form>
+        <section class="agendamento">
+  <h2>Agende sua Sessão</h2>
+  <form class="form-agendamento">
+    
+    <!-- Nome -->
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+    
+    <!-- WhatsApp -->
+    <label for="whatsapp">WhatsApp</label>
+    <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
+    
+    <!-- Email -->
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+    
+    <!-- Cards com opções -->
+    <p>Selecione seu objetivo:</p>
+    <div class="opcoes">
+      <label class="card-opcao">
+        <input type="checkbox" name="objetivo" value="funcional">
+        <span>Treino Funcional</span>
+      </label>
+      <label class="card-opcao">
+        <input type="checkbox" name="objetivo" value="musculacao">
+        <span>Musculação</span>
+      </label>
+      <label class="card-opcao">
+        <input type="checkbox" name="objetivo" value="hiit">
+        <span>HIIT</span>
+      </label>
     </div>
+    
+    <!-- Observações -->
+    <label for="observacao">Observações</label>
+    <textarea id="observacao" name="observacao" rows="4" placeholder="Escreva alguma observação..."></textarea>
+    
+    <!-- Botão -->
+    <button type="submit">Agendar Agora</button>
 
+    </form>
+    </section>
     </body>
 </html>
