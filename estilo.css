@@ -7,18 +7,19 @@ body {
 }
 
 .banner{
+  position: relative;
   background-image: url(banner.png);
-  min-height: 300px;
-  max-height: 700px;
   background-size: cover;
   background-position: center;
+  height: 70vh;         
+  min-height: 400px;    
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: ghostwhite;
-  font-size: 2em;
   text-align: center;
-  padding: 60px 20px 100px 20px;
+  color: ghostwhite;
+  padding: 20px;
 }
 
 h1, h2, h3, h4{
