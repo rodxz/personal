@@ -12,38 +12,40 @@
     </head>
     <body id="cadastro">
 
-    
-    
-    
-    
-    
-    
-    
-    
+        <div class="container">
+    <h2>Agendamento com Personal Trainer</h2>
+    <form>
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="whatsapp">Número do WhatsApp:</label>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label>Escolha os serviços:</label>
+      <div class="cards">
+        <div class="card">
+          <span>Treino funcional</span>
+          <input type="checkbox" name="servico" value="funcional">
+        </div>
+        <div class="card">
+          <span>Musculação personalizada</span>
+          <input type="checkbox" name="servico" value="musculacao">
+        </div>
+        <div class="card">
+          <span>Consultoria nutricional</span>
+          <input type="checkbox" name="servico" value="nutricional">
+        </div>
+      </div>
+
+            <label for="observacao">Observações:</label>
+            <textarea id="observacao" name="observacao" rows="4" placeholder="Escreva aqui qualquer detalhe adicional..."></textarea>
+
+        <button type="submit">Enviar Agendamento</button>
+        </form>
+    </div>
+
     </body>
 </html>
-            <main rule="main" class="container">
-                <div class="row justify-content-center">
-                    <h2>Faça seu Agendamento</h2>
-                </div>
-                <div class="row justify-content-center">
-
-                    <form>
-                        <label for="Whatsapp" class="d-sm-none">Numero Whatsapp</label>
-                        <input type="text" class="form-control" id="Whatsapp" name="Whatsapp" placeholder="Informe seu Whatsapp" required aria-required="true">
-                        <br>
-                        <label for="pagamento" class="d-sm-none">Forma de pagamento</label>
-                        <select id="pagamento" name="pagamento" class="form-control" required>
-                            <option>Escolha a forma de pagamento</option>
-                            <option>MasterCard (Crédito)</option>
-                            <option>MasterCard (Débito)</option>
-                            <option>Visa (Crédito)</option>
-                            <option>Visa (Débito)</option>
-                            <option>Dinheiro</option>
-                        </select>
-                        <br>
-                        <input type="checkbox" class="form-control" name="bebida"><label for="bebida">Bebida acompanha</label>
-                        <a href="pagamentoconcluido.html"><div class="container-botao"><button type="submit" class="btn-acao" class="btn btn-block btn-primary btn-lg">Quero que me chame no Whatsapp</button></div></a>
-                    </form> 
-                </div>
-            </main>
