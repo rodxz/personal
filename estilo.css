@@ -301,8 +301,13 @@ h3 {
   color: ghostwhite;
   border: none;
   padding: 18px 40px;
+  cursor: pointer;
   position: relative;
-  z-index: 1;
+  z-index: 1 !important;
+}
+
+.btn-acao:hover{
+  background-color: #007fff;
 }
 
 #cadastro-concluido{
