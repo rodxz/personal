@@ -37,12 +37,10 @@ body {
   z-index: 0;
 }
 
-.banner h1, 
-.banner p {
+.banner h1, .banner p {
   position: relative;
   z-index: 1;
 }
-
 
 h1, h2, h3, h4{
   font-family: monntserrat;
@@ -182,109 +180,109 @@ h3 {
   font-size: 70px;
 }
 
- #depoimento{
-   font-size: 500%;
-   font-weight: bold;
-   color: ghostwhite;
-   text-align: center;
-   margin-bottom: 40px;
-   line-height: 1.1;
-   padding: 10px 0;
-  }
-
-  .beneficios #treinar-comigo{
+#depoimento{
   font-size: 500%;
-  }
+  font-weight: bold;
+  color: ghostwhite;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.1;
+  padding: 10px 0;
+}
+
+.beneficios #treinar-comigo{
+  font-size: 500%;
+}
 
 @media (max-width: 768px) {
-  .sobre-personal .conteudo {
+.sobre-personal .conteudo {
   flex-direction: column;
   text-align: center;
-  }
+}
   
-  #depoimento, #sobre-mim, #treinar-comigo, #titulo, #serviço {
-    font-size: 200% !important;
-    padding: 20px 10px;
-    height: auto;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: center;
-  }
+#depoimento, #sobre-mim, #treinar-comigo, #titulo, #serviço {
+  font-size: 200% !important;
+  padding: 20px 10px;
+  height: auto;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
 
 
-  .foto-personal {
+.foto-personal {
   margin-bottom: 20px;
   max-height: 400px;
   width: 100%;
   height: auto;
-  }
+}
 
-  h1 {
-    font-size: 180%;
-    margin-bottom: 20px;
-  }
-  #frase-do-titulo {
-    font-size: 100%;
-    padding: 20px 10px;
-    margin-bottom: 20px;
-  }
-  .beneficios h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-  .beneficios .subtitulo {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  .beneficios-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .beneficio-card {
-    width: 98%;
-    max-width: 400px;
-    min-width: 220;
-    margin-bottom: 20px;
-    padding: 22px 14px;
-    box-sizing: border-box;
-  }
-  .beneficio-card p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  .row {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .card {
-    width: 95%;
-    max-width: 400px;
-    margin-bottom: 20px;
-    padding: 18px 10px;
-  }
-  .sobre-personal {
-    padding: 20px;
-    min-height: 0;             
-  }
+h1 {
+  font-size: 180%;
+  margin-bottom: 20px;
+}
+#frase-do-titulo {
+  font-size: 100%;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+.beneficios h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.beneficios .subtitulo {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.beneficios-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.beneficio-card {
+  width: 98%;
+  max-width: 400px;
+  min-width: 220;
+  margin-bottom: 20px;
+  padding: 22px 14px;
+  box-sizing: border-box;
+}
+.beneficio-card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.row {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.card {
+  width: 95%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  padding: 18px 10px;
+}
+.sobre-personal {
+  padding: 20px;
+  min-height: 0;             
+}
 
-  .sobre-personal .conteudo {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
+.sobre-personal .conteudo {
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
 
-  .foto-personal {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-  }
+.foto-personal {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
 
-  .texto-personal {
-    max-width: 95%;
-    margin: 0 auto;
-    font-size: 1rem;
+.texto-personal {
+  max-width: 95%;
+  margin: 0 auto;
+  font-size: 1rem;
   }
 }
 
@@ -325,6 +323,7 @@ h3 {
   font-size: 500%;
  font-weight: bold;
 }
+
 #cadastro{
  position: absolute;
  top: 50%;
@@ -338,7 +337,7 @@ h3 {
   font-size:150%;
 }
 #agradecimento{
-   position: absolute;
+  position: absolute;
  top: 57%;
  left: 50%;
  transform: translate(-50%, -50%);
@@ -351,29 +350,29 @@ h3 {
 }
 
 @media (max-width: 1024px) {
-  h1 {
-    font-size: 320%;
-  }
-  #frase-do-titulo {
-    font-size: 110%;
-    padding: 40px;
-  }
-  .beneficios h2 {
-    font-size: 32px;
-  }
-  .beneficios .subtitulo {
-    font-size: 20px;
-  }
-  .beneficio-card {
-    flex: 1 1 45%;
-    max-width: 45%;
-  }
-  .texto-personal {
-    font-size: 1rem;
-    padding-left: 20px;
-  }
-  .foto-personal {
-    max-width: 300px;
+h1 {
+  font-size: 320%;
+}
+#frase-do-titulo {
+  font-size: 110%;
+  padding: 40px;
+}
+.beneficios h2 {
+  font-size: 32px;
+}
+.beneficios .subtitulo {
+  font-size: 20px;
+}
+.beneficio-card {
+  flex: 1 1 45%;
+  max-width: 45%;
+}
+.texto-personal {
+  font-size: 1rem;
+  padding-left: 20px;
+}
+.foto-personal {
+  max-width: 300px;
   }
 }
 
@@ -452,19 +451,19 @@ h3 {
 }
   
  
-  p{
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  #treino{
-    font-family: arial;
-    font-style: normal;
-    top: 100%;
-  }
-  .subtitulo{
-    text-align: center;
-    color: ghostwhite;
-  }
- .col-md-4 {
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+#treino{
+  font-family: arial;
+  font-style: normal;
+  top: 100%;
+}
+.subtitulo{
+  text-align: center;
+  color: ghostwhite;
+}
+.col-md-4 {
   display: flex;
   flex-direction: column;
 }
@@ -482,11 +481,11 @@ h3 {
   justify-content: space-between;
   height: 100%;
 }
-/* Adicione isso ao seu estilo para garantir altura igual dos cards */
+
 .row {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch; /* Isso já está no seu CSS, está correto */
+  align-items: stretch;
 }
 
 .col-md-4 {
@@ -576,23 +575,23 @@ h3 {
 }
 
 @media (max-width: 600px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    padding: 0 8px;
-  }
-  .footer-info {
-    width: 100%;
-    min-width: unset;
-    text-align: center;
-  }
-  .footer-site {
-    padding: 24px 0 8px 0;
-  }
-  .footer-copy {
-    font-size: 0.85rem;
-    margin-top: 10px;
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 0 8px;
+}
+.footer-info {
+  width: 100%;
+  min-width: unset;
+  text-align: center;
+}
+.footer-site {
+  padding: 24px 0 8px 0;
+}
+.footer-copy {
+  font-size: 0.85rem;
+  margin-top: 10px;
   }
 }
 
@@ -653,28 +652,28 @@ h3 {
 }
 
 @media (max-width: 800px) {
-  .navbar-container {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 0 12px;
+.navbar-container {
+  flex-wrap: wrap;
+  height: auto;
+  padding: 0 12px;
   }
-  .navbar-links {
-    flex-direction: column;
-    width: 100%;
-    display: none;
-    background: ghostwhite;
-    position: absolute;
-    top: 64px;
-    left: 0;
-    padding: 16px 0;
-    border-bottom: 1px solid #e0e0e0;
-    z-index: 99;
-  }
-  .navbar-links.active {
-    display: flex;
-  }
-  .navbar-toggle {
-    display: block;
+.navbar-links {
+  flex-direction: column;
+  width: 100%;
+  display: none;
+  background: ghostwhite;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 99;
+}
+.navbar-links.active {
+  display: flex;
+}
+.navbar-toggle {
+  display: block;
   }
 }
 
