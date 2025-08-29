@@ -301,6 +301,8 @@ h3 {
   color: ghostwhite;
   border: none;
   padding: 18px 40px;
+  position: relative;
+  z-index: 1;
 }
 
 #cadastro-concluido{
