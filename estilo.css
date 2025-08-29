@@ -6,6 +6,10 @@ body {
   background-color: #317873;
 }
 
+.navbar-logo {
+  font-family: 'Montserrat';
+}
+
 .banner{
   position: relative;
   background-image: url(banner.png);
